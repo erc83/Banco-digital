@@ -1,33 +1,37 @@
-{{>HeaderHome}}
-    <title>Hello, world!</title>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Banco digital</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+{{>Header}}
+<title>Banco digital</title>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">acerca de nosotros</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Ingresar
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Acceder</a>
-          <a class="dropdown-item" href="#">Registrarse</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Admin</a>
+
+<header class="hero text-light text-right">
+<!-- Navbar -->
+{{>NavbarHome}}
+<!-- Navbar -->
+{{!-- <header class="hero text-light text-right col-md-12">
+<!-- Background image -->
+  <div class="container-fluid">
+    <div class="p-5 d-flex text-center bg-image" style=" background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.jpg'); height: 600px;">
+      <div class="col-md-12">
+        <div class="d-flex justify-content-center align-items-center h-90">
+          <div class="text-white text-center">
+            <h1 class="mb-3">Eric Espinoza</h1>
+            <h4 class="mb-3">Desarrollador FullStack Javascript</h4>
+            <a class="btn btn-outline-light btn-lg m-2" href="#features" role="button">Mis Habilidades</a>
+            <a class="btn btn-outline-light btn-lg m-2" href="#project" role="button">Portafolio</a>
+          </div>
         </div>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
-</nav>
-  </body>
-</html>
+</header> --}}
+<!-- Background image -->
+      <div class="container">
+        <h1 class="display-1 font-weight-bold my-5">Comidas del fin del mundo</h1>
+        <p class="my-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#work" class="btn btn-outline-info btn-lg mr-4">Trabajos</a>
+        <a href="#contact" class="btn btn-info btn-lg">Contacto</a>
+      </div>
+</header>
+
+
+
+{{>Footer}}

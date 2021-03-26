@@ -1,0 +1,51 @@
+{{>Header}}
+<title>Modificar Usuario</title>
+
+  {{>NavbarTopUser}}
+
+  <div class="container-fluid">
+    <div class="row">
+      {{!-- nav vertical --}}
+      {{> NavbarLeftUser activePerfil="active"}}
+      
+<div class="col-12 col-sm-9 text-center px-3 p-sm-5">
+    <small class="mb-2">Banco Digital de Chile</small>
+    <h4 class=>Modificar datos personales</h4>
+    <hr class="w-75 m-auto mb-2">
+    <div class="w-75 m-auto">
+        <div class="input-group mb-3">
+            <span class="input-group-text d-flex justify-content-center" id="inputGroup-sizing-default"><i
+                    class="fas fa-user-circle"></i></span>
+            <input type="text" class="form-control" placeholder="Ingrese su nombre completo" aria-label="Username"
+                value="{{user_name}}" id="name" />
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text d-flex justify-content-center" id="inputGroup-sizing-default"><i
+                    class="fas fa-envelope"></i></span>
+            <input type="text" class="form-control" placeholder="Ingrese su correo" aria-label="Username"
+                value="{{user_email}}" id="email" />
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text d-flex justify-content-center" id="inputGroup-sizing-default"><i
+                    class="fas fa-id-card"></i></span>
+            <input type="text" class="form-control" placeholder="Ingrese su RUT" aria-label="Username"
+                value="{{user_rut}}" id="rut" />
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text d-flex justify-content-center" id="inputGroup-sizing-default">
+                <i class="fas fa-map-marker-alt"></i>
+
+            </span>
+            <input type="text" class="form-control" placeholder="Ingrese su dirección" aria-label="Username"
+                value="{{user_address}}" id="address" />
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text d-flex justify-content-center" id="inputGroup-sizing-default"><i
+                    class="fas fa-portrait"></i></span>
+            <input type="password" class="form-control" placeholder="Confirme su clave" aria-label="Username"
+                value="{{user_password}}" disabled />
+        </div>
+    </div>
+    <button type="button" class="btn btn-dark" onclick="updateProfile()">Modificar</button>
+</div>

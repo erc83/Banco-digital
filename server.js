@@ -30,6 +30,11 @@ app.use('/' , require ("./router/home.js"))
 app.use('/users', require("./router/usuarios.js"))
 app.use('/admin', require("./router/admin.js") )
 
+app.get('*', (req, res) => {
+    res.render("404", {layout:"404" })
+});
+
+
 
 
 
